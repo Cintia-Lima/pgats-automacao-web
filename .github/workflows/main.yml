@@ -20,8 +20,8 @@ jobs:
     - name: Instalando dependências
       run: npm install
 
-    - name: Executando os testes
-      run: npx cypress run
+    - name: Executando os testes trabalhoFinal
+      run: npx cypress run --spec "cypress/e2e/automation-trabalhoFinal.cy.js"
     
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
