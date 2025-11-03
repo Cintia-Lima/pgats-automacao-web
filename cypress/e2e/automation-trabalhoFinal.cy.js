@@ -56,6 +56,7 @@ beforeEach ( () => {
 
   it('Caso de Teste 1: Cadastrar um usuário', () => {
     menu.navegarParaLogin()
+    cy.wait(5000)
       
     // preencher o formulário de pré-cadastro
     login.preencherFormularioDePreCadastro()
