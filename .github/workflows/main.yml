@@ -6,20 +6,19 @@ on:
 jobs:
   e2e-tests:
 
-  runs-on: ubuntu-latest
- 
-  steps:
+    runs-on: ubuntu-latest
 
-   # clone do projeto para a máquina
-   - uses: actions/checkout@v4
+    steps:
 
-   # Conferir a versão instalada
-   - name: Node version
-     run: node -- version
+    #clone do projeto para máquina
+    - uses: actions/checkout@v4
 
-   - name: Instalando dependências
-     rum: npm install
+    #conferir a versão instalada
+    - name: Node version
+      run: node --version
 
-   - name: Executando os testes
-     rum: npx cypress run
-   
+    - name: Instalando dependências
+      run: npm install
+
+    - name: Executando os testes
+      run: npx cypress run
