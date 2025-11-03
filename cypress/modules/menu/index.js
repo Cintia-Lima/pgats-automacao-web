@@ -8,6 +8,7 @@ export function navegarParaLogin() {
 class Menu {
   navegarParaLogin() {
     cy.get('a[href="/login"]').click()
+    cy.wait(2000)
   }
 
   efetuarLogout(){
